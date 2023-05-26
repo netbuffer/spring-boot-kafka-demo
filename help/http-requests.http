@@ -1,0 +1,14 @@
+### /actuator
+GET http://localhost:10340/actuator
+
+### /producer/getDefaultTopic
+GET http://localhost:10340/producer/getDefaultTopic
+
+### /producer/getTransactionIdPrefix
+GET http://localhost:10340/producer/getTransactionIdPrefix
+
+### /producer/getMessageConverter
+GET http://localhost:10340/producer/getMessageConverter
+
+### /producer/send
+GET http://localhost:10340/producer/send?topic=sbkd&data=world
