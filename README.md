@@ -14,3 +14,4 @@ kafka-console-consumer.sh --topic datas --bootstrap-server localhost:9092
 * https://kafka.apache.org/documentation/
 * https://github.com/spring-projects/spring-kafka
 * https://docs.spring.io/spring-kafka/docs/2.8.9/reference/html/
+* https://github.com/cdimascio/dotenv-java

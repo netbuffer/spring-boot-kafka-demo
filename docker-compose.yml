@@ -19,12 +19,12 @@ services:
     ports:
       - '39092:9092'
     working_dir: /opt/kafka/bin
+    env_file:
+      - ./sbkd.env
     environment:
       - 'TZ=Asia/Shanghai'
       - 'KAFKA_BROKER_ID=0'
-      - 'KAFKA_ADVERTISED_HOST_NAME=your-computer-interval-ip'
       - 'KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181'
-      - 'KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://your-computer-interval-ip:39092'
       - 'KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092'
       - 'KAFKA_LOG_RETENTION_HOURS=720'
       - 'KAFKA_HEAP_OPTS=-Xmx512M -Xms128M'

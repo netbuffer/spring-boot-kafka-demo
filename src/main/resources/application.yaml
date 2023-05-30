@@ -9,10 +9,13 @@ spring:
     producer:
       batch-size: 16384
       buffer-memory: 33554432
+      retries: 5
     consumer:
       auto-offset-reset: earliest
       max-poll-records: 1000
       fetch-max-wait: 10s
+      auto-commit-interval: 5s
+      enable-auto-commit: true
 
 logging:
   level:
